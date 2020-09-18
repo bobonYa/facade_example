@@ -9,8 +9,12 @@ use \Parser\OpenWeather;
  * getWeather
  * type: json(default)|xml
  * method: save(default)|show
+ *
+ * явно указываем какой парсер погоды использовать
+ * $weather=new Weather('Nosovibirsk',new OpenWeather());
  */
-$weather=new Weather('34234234234234234',new OpenWeather());
-$weather->getWeather('json','show');
+
+$weather=new Weather('Nosovibirsk');
+$weather->getWeather('xml','save');
 
 echo "done()";
