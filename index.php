@@ -12,3 +12,5 @@ use \Parser\OpenWeather;
  */
 $weather=new Weather('34234234234234234',new OpenWeather());
 $weather->getWeather('json','show');
+
+echo "done()";
